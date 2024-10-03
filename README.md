@@ -1,5 +1,5 @@
 # Description
-Repository for my portfolio website
+Repository for my portfolio website hosted on GitHub Pages!
 
 This uses:
 - React (JavaScript) with Vite 
