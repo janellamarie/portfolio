@@ -1,6 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 
+function HomeScreen() {
+  return (
+    <div>
+      <h1>Hi there! 👋🏻</h1>
+    </div>
+  )
+}
+
 // Navigation Bar
 function NavigationBar() {
   {/* TODO: Add links */}
