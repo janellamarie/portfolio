@@ -4,8 +4,10 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color: rgb(158,71,132);
+  background-color: linear-gradient(329deg, rgba(158,71,132,1) 0%, rgba(210,118,133,1) 100%); */
+  height: 100vh;
+  background: linear-gradient(329deg, rgba(158,71,132,1) 0%, rgba(210,118,133,1) 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,16 +20,32 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
+svg {
+  transition: all .2s;
+}
+
+svg:hover {
+  fill: #D27685;
+}
+
+.nav-item > .nav-link.active {
+  color: #D27685;
+}
+
+.nav-link:hover {
+  color: #996e75;
+}
+
 body {
-  margin: 0;
-  display: flex;
+  margin: 0 auto;
+  margin-top: 4%;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 60%;
 }
 
 h1 {
