@@ -8,7 +8,8 @@ This uses:
 - Boostrap
 
 ## Installing the libraries
-- Boostrap: `npm i bootstrap@5.3.3`
+- Bootstrap: `npm i bootstrap@5.3.3`
+- Bootstrap Icons: `npm i bootstrap-icons`
 
 ## Running the program locally
 Use `npm run dev`
