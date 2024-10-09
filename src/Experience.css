@@ -10,10 +10,10 @@
 .timeline::before {
   content: '';
   position: absolute;
-  top: 4%;
+  top: 3%;
   left: 9.4px;
   width: 2px;
-  height: 67%;
+  height: 90%;
   background: rgb(236, 145, 145);
 }
 

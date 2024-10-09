@@ -11,7 +11,7 @@ export default function Experience() {
               <div className="card border-1 bg-transparent mb-2">
                 <div className="card-body">
                   <h4 className="card-title">Software Engineer I</h4>
-                  
+                  <p className="float-end text-body-secondary">July 2022 - March 2024</p>
                   <h5 className="card-subtitle pb-3 ">GitHub</h5>
                   <p className="card-text">
                     <ul>
@@ -53,7 +53,7 @@ export default function Experience() {
 
             {/* Bashpole */}
             <li className="timeline-item">
-              <div className="card border-1 bg-transparent">
+              <div className="card border-1 bg-transparent mb-2">
                 <div className="card-body">
                   <h4 className="card-title">Intern for Intermediate Java and More for a Web App for Non-profits</h4>
                   <p className="float-end text-body-secondary">December 2021 - May 2022</p>
@@ -77,6 +77,30 @@ export default function Experience() {
                 </div>
               </div>
             </li>
+
+
+          {/* USF */}
+          <li className="timeline-item">
+              <div className="card border-1 bg-transparent mb-2">
+                <div className="card-body">
+                  <h4 className="card-title">University of South Florida</h4>
+                  <p className="float-end text-body-secondary">May 2020 - May 2022</p>
+                  <h5 className="card-subtitle pb-3 ">Bachelor of Science, major in Computer Science</h5>
+                </div>
+              </div>
+            </li>
+
+          {/* HCC */}
+          <li className="timeline-item">
+              <div className="card border-1 bg-transparent mb-2">
+                <div className="card-body">
+                  <h4 className="card-title">Hillsborough Community College</h4>
+                  <p className="float-end text-body-secondary">August 2018 - December 2019</p>
+                  <h5 className="card-subtitle pb-3 ">Associate in Arts, major in Computer Information Systems</h5>
+                </div>
+              </div>
+            </li>
+
           </ul>
         </div>
       </div>

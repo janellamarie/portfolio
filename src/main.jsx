@@ -8,6 +8,7 @@ import {
 import App from './App.jsx'
 import AboutMe from './AboutMe.jsx';
 import Experience from './Experience.jsx';
+import Skills from './Skills.jsx';
 
 import './index.css'
 
@@ -21,12 +22,16 @@ const router = createBrowserRouter([
         element: <AboutMe />
       },
       {
-        path:"AboutMe",
+        path:"aboutme",
         element: <AboutMe />
       },
       {
-        path:"Experience",
+        path:"experience",
         element: <Experience />
+      },
+      {
+        path:"skills",
+        element: <Skills />
       },
     ],
   },
