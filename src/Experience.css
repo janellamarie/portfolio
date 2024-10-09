@@ -1,0 +1,19 @@
+.timeline {
+  position: relative;
+}
+
+.timeline-item::marker {
+  font-size: 2em;
+  color: rgb(236, 145, 145);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 3%;
+  left: 9.4px;
+  width: 2px;
+  height: 90%;
+  background: rgb(236, 145, 145);
+}
+
