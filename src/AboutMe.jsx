@@ -1,10 +1,12 @@
+import image from "../src/assets/img/20230218_170648 icon.jpg"
+
 // Content: About Me
 export default function AboutMe() {
   return(
     <div className="container text-center p-1">
       <div className="row align-items-center mb-3">
         <div className="col">
-          <img src="src\assets\img\20230218_170648 icon.jpg" className="center-block rounded" width={150}/>
+          <img src={image} className="center-block rounded" width={150}/>
         </div>
       </div>
         <div className="row">
