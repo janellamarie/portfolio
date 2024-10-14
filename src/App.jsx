@@ -18,13 +18,13 @@ function NavigationBar() {
       <div className="container-fluid">
         <ul className="navbar-nav nav nav-underline nav-fill">
           <li className="nav-item">
-            <a className="nav-link" href="/" id="about-me">About Me</a>
+            <a className="nav-link" href="/#/" id="about-me">About Me</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="experience" id="experience">Experience</a>
+            <a className="nav-link" href="/#/experience" id="experience">Experience</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="skills" id="skills">Skills</a>
+            <a className="nav-link" href="/#/skills" id="skills">Skills</a>
           </li>
         </ul>
         <div>
