@@ -14,7 +14,7 @@ import './index.css'
 
 const router = createHashRouter([
   {
-    path: "",
+    path: "/",
     element: <App />,
     children: [
       {
@@ -22,15 +22,15 @@ const router = createHashRouter([
         element: <AboutMe />
       },
       {
-        path:"/aboutme",
+        path:"aboutme",
         element: <AboutMe />
       },
       {
-        path:"/experience",
+        path:"experience",
         element: <Experience />
       },
       {
-        path:"/skills",
+        path:"skills",
         element: <Skills />
       },
     ],
