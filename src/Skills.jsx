@@ -42,8 +42,8 @@ function SkillList({data}) {
   return (
     <div className="float-start w-100">
       {
-        data.map((v) => (      
-          <SkillPill value={v}/>
+        data.map((v, i) => (      
+          <SkillPill value={v} key={i}/>
         )
       )}
     </div>
@@ -61,9 +61,9 @@ export default function Skills() {
     <div className="container">
       <div className="row align-items-top gx-0 mb-0">
         <div className="col-4">
-          <h5 className="fw-bold">
+          <h6 className="fw-bold">
             Programming Languages:
-          </h5>
+          </h6>
         </div>
         <div className="col">
           <SkillList data={languages} />
@@ -74,9 +74,9 @@ export default function Skills() {
 
       <div className="row align-items-top gx-0">
         <div className="col-4">
-          <h5 className="fw-bold">
+          <h6 className="fw-bold">
             Databases:
-          </h5>
+          </h6>
         </div>
         <div className="col">
           <SkillList data={databases} />
@@ -87,9 +87,9 @@ export default function Skills() {
 
       <div className="row align-items-top gx-0">
         <div className="col-4">
-          <h5 className="fw-bold">
+          <h6 className="fw-bold">
             Web Frameworks:
-          </h5>
+          </h6>
         </div>
         <div className="col">
           <SkillList data={web} />
@@ -100,9 +100,9 @@ export default function Skills() {
 
       <div className="row align-items-top gx-0">
         <div className="col-4">
-          <h5 className="mb-0 fw-bold">
+          <h6 className="mb-0 fw-bold">
             Others:
-          </h5>
+          </h6>
           <span className="text-secondary mt-0 fw-lighter">
             (Front-End Frameworks, Libraries, etc.)
           </span>
@@ -116,9 +116,9 @@ export default function Skills() {
 
       <div className="row align-items-top gx-0 pb-2 mb-5">
         <div className="col-4">
-          <h5 className="fw-bold">
+          <h6 className="fw-bold">
             Tools:
-          </h5>
+          </h6>
         </div>
         <div className="col">
           <SkillList data={tools} />
