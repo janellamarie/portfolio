@@ -17,3 +17,14 @@
   background: rgb(236, 145, 145);
 }
 
+.card-title {
+  color: #37306B;
+}
+
+.card-subtitle {
+  color: rgb(236, 145, 145);
+}
+
+.header {
+  margin-bottom: -20px;
+}

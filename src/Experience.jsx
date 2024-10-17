@@ -1,5 +1,18 @@
 import './Experience.css'
 
+function Header({title, subtitle, date}) {
+  return (
+    <div className="header">
+      <h4 className="card-title fw-bold">{title}</h4>
+      <p>
+        <span className="float-end text-body-secondary">{date}</span>
+        <h5 className="card-subtitle pb-3">{subtitle}</h5>
+      </p>
+    </div>
+  )
+}
+
+
 export default function Experience() {
   return(
     <div className="container">
@@ -10,10 +23,12 @@ export default function Experience() {
             <li className="timeline-item">
               <div className="card border-1 bg-transparent mb-2">
                 <div className="card-body">
-                  <h4 className="card-title">Software Engineer I</h4>
-                  <p className="float-end text-body-secondary">July 2022 - March 2024</p>
-                  <h5 className="card-subtitle pb-3 ">GitHub</h5>
-                  <p className="card-text">
+                  <Header 
+                    title={"Software Engineer I"} 
+                    subtitle={"GitHub"} 
+                    date={"July 2022 - March 2024"} 
+                  />
+                  <p className="card-text text-break">
                     <ul>
                       <li>
                         Worked as a full-stack software engineer in an agile, scrum environment under the secret scanning experiences team
@@ -55,9 +70,11 @@ export default function Experience() {
             <li className="timeline-item">
               <div className="card border-1 bg-transparent mb-2">
                 <div className="card-body">
-                  <h4 className="card-title">Intern for Intermediate Java and More for a Web App for Non-profits</h4>
-                  <p className="float-end text-body-secondary">December 2021 - May 2022</p>
-                  <h5 className="card-subtitle pb-3">Bashpole Software, Inc. </h5>
+                  <Header 
+                    title={"Intern for Intermediate Java and More for a Web App for Non-profits"} 
+                    subtitle={"Bashpole Software, Inc."} 
+                    date={"December 2021 - June 2022"} 
+                  />
                   <p className="card-text">
                   <ul>
                     <li>
@@ -83,9 +100,11 @@ export default function Experience() {
           <li className="timeline-item">
               <div className="card border-1 bg-transparent mb-2">
                 <div className="card-body">
-                  <h4 className="card-title">University of South Florida</h4>
-                  <p className="float-end text-body-secondary">May 2020 - May 2022</p>
-                  <h5 className="card-subtitle">Bachelor of Science, major in Computer Science</h5>
+                  <Header 
+                    title={"University of South Florida"} 
+                    subtitle={"Bachelor of Science, major in Computer Science"}
+                    date={"May 2020 - May 2022"}
+                  />
                 </div>
                 <h5 className="ms-3">Projects</h5>
                 <p className="card-text">
@@ -115,9 +134,11 @@ export default function Experience() {
           <li className="timeline-item">
               <div className="card border-1 bg-transparent mb-2">
                 <div className="card-body">
-                  <h4 className="card-title">Hillsborough Community College</h4>
-                  <p className="float-end text-body-secondary">August 2018 - December 2019</p>
-                  <h5 className="card-subtitle pb-3 ">Associate in Arts, major in Computer Information Systems</h5>
+                  <Header 
+                    title={"Hillsborough Community College"} 
+                    subtitle={"Associate in Arts, major in Computer Information Systems"} 
+                    date={"August 2018 - December 2019"} 
+                  />
                 </div>
               </div>
             </li>

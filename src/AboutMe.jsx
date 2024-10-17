@@ -11,7 +11,7 @@ export default function AboutMe() {
       </div>
         <div className="row">
           <div className="col">
-            <h2><b>I&apos;m Janella Marie Co.</b></h2>
+            <h2 className="fw-bold">I&apos;m Janella Marie Co.</h2>
             <p>A full-stack software engineer currently based in Lutz, FL, USA. I graduated from University of South Florida with Bachelor&apos;s degree in Computer Science. I love building web experiences and I&apos;m always eager to learn new things. </p>
           </div>
         </div>

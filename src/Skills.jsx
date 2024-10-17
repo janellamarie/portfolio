@@ -52,7 +52,7 @@ function SkillList({data}) {
 
 function SkillPill({value}) {
   return(
-    <button className="btn ms-3 mb-2" disabled>{value}</button>
+    <button className="btn ms-3 btn-outline-primary mb-2">{value}</button>
   )
 }
 
