@@ -1,17 +1,37 @@
 import './Experience.css'
 
+let work = [ 
+  {
+    "company": "GitHub",
+    "title": "Software Engineer",
+    "date": "July 2022 - March 2024",
+    "description": "Worked as a full-stack software engineer under the Secret Scanning Experiences team; making updates and changes to GitHub's Secret Scanning feature from the front-end, to the back-end.",
+    "skills": [
+      "Go", "Ruby", "Ruby on Rails", "TypeScript", "Datadog", "Git", "GitHub", "Splunk", "Sentry", "MySQL"
+    ]
+  },
+  {
+    "company": "Bashpole Software, Inc.",
+    "title": "Intern for Intermediate Java and More for a Web App for Non-profits",
+    "date": "December 2021 - June 2022",
+    "description": "Worked as a full-stack software engineering intern creating landing pages used in advertisements for non-profits",
+    "skills": [
+      "Java", "Java Server Pages (JSP)", "MySQL", "JavaScript"
+    ]
+  }
+]
+
 function Header({title, subtitle, date}) {
   return (
     <div className="header">
-      <h4 className="card-title fw-bold">{title}</h4>
-      <p>
-        <span className="float-end text-body-secondary">{date}</span>
-        <h5 className="card-subtitle pb-3">{subtitle}</h5>
+      <h4 className="card-title fw-bold text-primary">{title}</h4>
+      <p className="mb-3">
+        <span className="float-end text-body-secondary ms-2">{date}</span>
+        <h5 className="card-subtitle pb-3 text-secondary">{subtitle}</h5>
       </p>
     </div>
-  )
+  ) 
 }
-
 
 export default function Experience() {
   return(
@@ -19,84 +39,28 @@ export default function Experience() {
       <div className="row">
         <div className="col">
           <ul className="timeline">
-            {/* GithHub */}
-            <li className="timeline-item">
-              <div className="card border-1 bg-transparent mb-2">
-                <div className="card-body">
-                  <Header 
-                    title={"Software Engineer I"} 
-                    subtitle={"GitHub"} 
-                    date={"July 2022 - March 2024"} 
-                  />
-                  <p className="card-text text-break">
-                    <ul>
-                      <li>
-                        Worked as a full-stack software engineer in an agile, scrum environment under the secret scanning experiences team
-                      </li>
-                      <li>
-                        Participated in scrum ceremonies such as daily standup meetings and bi-weekly sprint retros
-                      </li>
-                      <li>
-                        Utilized Golang and Ruby to modify and update existing features for the secret scanning web experience
-                      </li>
-                      <li>
-                        Assisted with transitioning the front-end web experience from using Ruby on Rails components to React components with TypeScript
-                      </li>
-                      <li>
-                        Shortened the URLs returned by a feature that blocks pushes from the CLI onto GitHub when a secret isdetected in the push
-                      </li>
-                      <li>
-                        Expanded coverage for an app that calls third-party public APIs to check validity of partner tokens and secrets leaked in content uploaded to GitHub repositories
-                      </li>
-                      <li>
-                        Coordinated with product managers and designers to implement copy changes based on customer and internal feedback
-                      </li>
-                      <li>
-                        Refactored the mailers sent by the secret scanning app, resulting in clearer emails and better code maintainability
-                      </li>
-                      <li>
-                        Wrote and updated existing unit tests while working on code for feature work
-                      </li>
-                      <li>
-                        Served as on-call to triage support escalations and any live-site issues, using Datadog, Sentry, and Splunk during shifts to monitor app performance, to investigate issues, and to debug errors and exceptions
-                      </li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </li>
+            <h4 className="fw-bold">Work</h4>
+            {
+              work.map((w, i) => (
+                <li className="timeline-item" key={i}>
+                  <div className="card border-1 bg-transparent mb-2">
+                    <div className="card-body">
+                      <Header 
+                        title={w.title} 
+                        subtitle={w.company} 
+                        date={w.date} 
+                      />
+                      <p className="card-text text-break">
+                        <span>{w.description}</span>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              ))
+            }
 
-            {/* Bashpole */}
-            <li className="timeline-item">
-              <div className="card border-1 bg-transparent mb-2">
-                <div className="card-body">
-                  <Header 
-                    title={"Intern for Intermediate Java and More for a Web App for Non-profits"} 
-                    subtitle={"Bashpole Software, Inc."} 
-                    date={"December 2021 - June 2022"} 
-                  />
-                  <p className="card-text">
-                  <ul>
-                    <li>
-                      Worked in a team of full-stack Java software developer interns, supervised by a senior engineer
-                    </li>
-                    <li>
-                      Created landing pages to be used in advertisements by non-profits using Java Server Pages (JSP), HTML, and CSS
-                    </li>
-                    <li>
-                      Wrote SQL queries and used MySQL to store and manage data to be displayed
-                    </li>
-                    <li>
-                      Created scripts in Google Workspace Apps using JavaScript to help business process such as creating a spreadsheet to track internship progress
-                    </li>
-                  </ul>
-                  </p>
-                </div>
-              </div>
-            </li>
+          <h4 className="fw-bold pt-3">Education</h4>
 
-
-          {/* USF */}
           <li className="timeline-item">
               <div className="card border-1 bg-transparent mb-2">
                 <div className="card-body">

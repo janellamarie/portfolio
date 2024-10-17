@@ -52,13 +52,13 @@ function SkillList({data}) {
 
 function SkillPill({value}) {
   return(
-    <button className="btn ms-3 btn-outline-primary mb-2">{value}</button>
+    <button className="btn ms-3 btn-outline-secondary mb-2">{value}</button>
   )
 }
 
 export default function Skills() {
   return(
-    <div className="container">
+    <div className="container px-4 pt-2">
       <div className="row align-items-top gx-0 mb-0">
         <div className="col-4">
           <h6 className="fw-bold">
@@ -103,7 +103,7 @@ export default function Skills() {
           <h6 className="mb-0 fw-bold">
             Others:
           </h6>
-          <span className="text-secondary mt-0 fw-lighter">
+          <span className="text-gray mt-0">
             (Front-End Frameworks, Libraries, etc.)
           </span>
         </div>
