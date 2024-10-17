@@ -22,14 +22,36 @@
       var path = window.location.href;
       
       $(document).ready(function() {
-        $('.nav-link').each(function(n) {
-          if(path.includes('experience')) {
-            $("#experience").addClass('active');
-          } else if(path.includes('skills')) {
-            $("#skills").addClass('active');
-          } else {
-            $("#about-me").addClass('active');
-          }
+        if(path.includes("aboutme")) {
+          $("#about-me").addClass('active');
+          $("#experience").removeClass('active');
+          $("#skills").removeClass('active');
+        } else if(path.includes("experience")) {
+          $("#experience").addClass('active');
+          $("#skills").removeClass('active');
+          $("#about-me").removeClass('active');
+        } else {
+          $("#skills").addClass('active');
+          $("#experience").removeClass('active');
+          $("#about-me").removeClass('active');
+        }
+
+        $("#about-me").click(function() {
+          $("#about-me").addClass('active');
+          $("#experience").removeClass('active');
+          $("#skills").removeClass('active');
+        })
+
+        $("#experience").click(function() {
+          $("#experience").addClass('active');
+          $("#skills").removeClass('active');
+          $("#about-me").removeClass('active');
+        })
+
+        $("#skills").click(function() {
+          $("#skills").addClass('active');
+          $("#experience").removeClass('active');
+          $("#about-me").removeClass('active');
         })
       });
       </script>
