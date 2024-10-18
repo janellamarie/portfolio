@@ -62,48 +62,57 @@ export default function Experience() {
           <h4 className="fw-bold pt-3">Education</h4>
 
           <li className="timeline-item">
-              <div className="card border-1 bg-transparent mb-2">
-                <div className="card-body">
-                  <Header 
-                    title={"University of South Florida"} 
-                    subtitle={"Bachelor of Science, major in Computer Science"}
-                    date={"May 2020 - May 2022"}
-                  />
-                </div>
-                <h5 className="ms-3 projects-header">Projects</h5>
-                <p className="card-text">
+            <div className="card border-1 bg-transparent mb-2">
+              <div className="card-body">
+                <Header 
+                  title={"University of South Florida"} 
+                  subtitle={"Bachelor of Science, major in Computer Science"}
+                  date={"May 2020 - May 2022"}
+                />
+              </div>
+              <h5 className="ms-3 projects-header">Projects</h5>
+              <p className="card-text">
                 <ul className="school-projects">
                   <li className="school-projects-name">
-                      <span><i className="bi bi-folder2 me-2 text-secondary" />COP-3331 (Object-Oriented Software Design) Flex Project</span>
-                      <span className="float-end me-3">
-                        <a href="https://github.com/janellamarie/cop3331-flex-project" target="_blank">
-                          <i className="bi bi-github"/>
-                        </a>
-                      </span>
-                      <p>
-                        <ul className="school-projects-description">
-                          <li><i className="bi bi-code-slash me-2 text-secondary" />Programming Language(s): C++</li>
-                          <li><i className="bi bi-info-square me-2 text-secondary" />CLI-based program simulating a CRUD app using data from the game &quot;Genshin Impact&quot;</li>
-                        </ul>
-                      </p>
-                    </li>
-                  </ul>
-                </p>
-              </div>
-            </li>
+                    <span>
+                      <i className="bi bi-folder2 me-2 text-secondary" />
+                      COP-3331 (Object-Oriented Software Design) Flex Project
+                    </span>
+                    <span className="float-end me-3">
+                      <a href="https://github.com/janellamarie/cop3331-flex-project" target="_blank">
+                        <i className="bi bi-github"/>
+                      </a>
+                    </span>
+                    <p>
+                      <ul className="school-projects-description">
+                        <li>
+                          <i className="bi bi-code-slash me-2 text-secondary" />
+                          Programming Language(s): C++
+                        </li>
+                        <li>
+                          <i className="bi bi-info-square me-2 text-secondary" />
+                          CLI-based program simulating a CRUD app using data from the game &quot;Genshin Impact&quot;
+                        </li>
+                      </ul>
+                    </p>
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </li>
 
           {/* HCC */}
           <li className="timeline-item">
-              <div className="card border-1 bg-transparent mb-2">
-                <div className="card-body">
-                  <Header 
-                    title={"Hillsborough Community College"} 
-                    subtitle={"Associate in Arts, major in Computer Information Systems"} 
-                    date={"August 2018 - December 2019"} 
-                  />
-                </div>
+            <div className="card border-1 bg-transparent mb-2">
+              <div className="card-body">
+                <Header 
+                  title={"Hillsborough Community College"} 
+                  subtitle={"Associate in Arts, major in Computer Information Systems"} 
+                  date={"August 2018 - December 2019"} 
+                />
               </div>
-            </li>
+            </div>
+          </li>
 
           </ul>
         </div>
