@@ -5,7 +5,7 @@ let work = [
     "company": "GitHub",
     "title": "Software Engineer",
     "date": "July 2022 - March 2024",
-    "description": "Worked as a full-stack software engineer under the Secret Scanning Experiences team; making updates and changes to GitHub's Secret Scanning feature from the front-end, to the back-end.",
+    "description": "Worked as a full-stack software engineer under an agile scrum team called Secret Scanning Experiences—making updates and changes to GitHub's Secret Scanning app from the front-end, to the back-end.",
     "skills": [
       "Go", "Ruby", "Ruby on Rails", "TypeScript", "Datadog", "Git", "GitHub", "Splunk", "Sentry", "MySQL"
     ]
@@ -35,7 +35,7 @@ function Header({title, subtitle, date}) {
 
 export default function Experience() {
   return(
-    <div className="container">
+    <div className="container mb-5">
       <div className="row">
         <div className="col">
           <ul className="timeline">
@@ -50,7 +50,7 @@ export default function Experience() {
                         subtitle={w.company} 
                         date={w.date} 
                       />
-                      <p className="card-text text-break">
+                      <p className="card-text">
                         <span>{w.description}</span>
                       </p>
                     </div>
@@ -70,22 +70,20 @@ export default function Experience() {
                     date={"May 2020 - May 2022"}
                   />
                 </div>
-                <h5 className="ms-3">Projects</h5>
+                <h5 className="ms-3 projects-header">Projects</h5>
                 <p className="card-text">
-                <ul>
-                  <li>
-                    <p className="float-end me-3"> 
-                        <a href="https://github.com/janellamarie/cop3331-flex-project" target="_blank"> 
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github mx-2" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                          </svg>
+                <ul className="school-projects">
+                  <li className="school-projects-name">
+                      <span><i className="bi bi-folder2 me-2 text-secondary" />COP-3331 (Object-Oriented Software Design) Flex Project</span>
+                      <span className="float-end me-3">
+                        <a href="https://github.com/janellamarie/cop3331-flex-project" target="_blank">
+                          <i className="bi bi-github"/>
                         </a>
-                      </p>
-                      <h6>COP-3331 (Object-Oriented Software Design) Flex Project</h6>
+                      </span>
                       <p>
-                        <ul>
-                          <li>Programming Language(s): C++</li>
-                          <li>CLI-based program simulating a CRUD app using data from the game &quot;Genshin Impact&quot;</li>
+                        <ul className="school-projects-description">
+                          <li><i className="bi bi-code-slash me-2 text-secondary" />Programming Language(s): C++</li>
+                          <li><i className="bi bi-info-square me-2 text-secondary" />CLI-based program simulating a CRUD app using data from the game &quot;Genshin Impact&quot;</li>
                         </ul>
                       </p>
                     </li>

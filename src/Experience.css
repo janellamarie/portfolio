@@ -6,3 +6,11 @@
 .header {
   margin-bottom: -20px;
 }
+
+.school-projects, .school-projects-description {
+  list-style-type: none;
+}
+
+.projects-header {
+  margin-top: -12px;
+}
