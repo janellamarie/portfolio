@@ -21,18 +21,18 @@
       var path = window.location.href;
       
       $(document).ready(function() {
-        if(path.includes("aboutme")) {
-          $("#about-me").addClass('active');
-          $("#experience").removeClass('active');
-          $("#skills").removeClass('active');
-        } else if(path.includes("experience")) {
+        if(path.includes("experience")) {
           $("#experience").addClass('active');
           $("#skills").removeClass('active');
           $("#about-me").removeClass('active');
-        } else {
+        } else if(path.includes("experience")) {
           $("#skills").addClass('active');
           $("#experience").removeClass('active');
           $("#about-me").removeClass('active');
+        } else {
+          $("#about-me").addClass('active');
+          $("#experience").removeClass('active');
+          $("#skills").removeClass('active');
         }
 
         $("#about-me").click(function() {
